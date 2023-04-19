@@ -15,6 +15,6 @@ ret, extracted_watermark_mask = cv2.threshold(watermark, 0, 255, cv2.THRESH_BINA
 
 ssim_score = ssim(watermark_image_gray, extracted_watermark_mask, multichannel=True)
 if ssim_score > 0.9:
-    print("The watermarked image uses the exact same watermark as the original watermark image.")
+    print("The image is authenticate.")
 else:
-    print("The watermarked image does not use the same watermark as the original watermark image.")
+    print("The image could be a fake.")
