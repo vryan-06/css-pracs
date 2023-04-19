@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+
 original_image = cv2.imread('luffy_1015.png')
 watermark_image = cv2.imread('watermark.png')
 # print(original_image.shape)
